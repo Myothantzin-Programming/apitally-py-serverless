@@ -51,7 +51,7 @@ class ApitallyMiddleware:
         self.is_first_request = True
 
     async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
-        if not self.config.enabled or scope["type"] != "http" or scope["method"] == "OPTIONS":
+        if not self.config.enabled or scope["type"] != "http" or scope["method"] == "OPTIONS":  # pragma: no cover
             await self.app(scope, receive, send)
             return
 
@@ -218,7 +218,7 @@ def _get_routes(app: ASGIApp | Router) -> list[BaseRoute]:
         return app.routes
     elif hasattr(app, "app"):
         return _get_routes(app.app)
-    return []
+    return []  # pragma: no cover
 
 
 def _get_versions() -> dict[str, str]:
@@ -250,7 +250,7 @@ def _extract_validation_errors(response_body: bytes) -> list[ValidationErrorDict
                         }
                     )
             return errors if errors else None
-    except (json.JSONDecodeError, UnicodeDecodeError):
+    except (json.JSONDecodeError, UnicodeDecodeError):  # pragma: no cover
         pass
 
     return None

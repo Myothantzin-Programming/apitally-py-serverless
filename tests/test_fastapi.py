@@ -119,6 +119,16 @@ def test_logs_error_response(client: TestClient, capsys: pytest.CaptureFixture[s
     assert data["request"]["path"] == "/error"
 
 
+def test_logs_unhandled_request(client: TestClient, capsys: pytest.CaptureFixture[str]):
+    response = client.get("/unhandled")
+    assert response.status_code == 404
+
+    data = get_logged_data(capsys)
+    assert data is not None
+    assert "path" not in data["request"]
+    assert data["response"]["status_code"] == 404
+
+
 def test_captures_validation_errors(client: TestClient, capsys: pytest.CaptureFixture[str]):
     response = client.get("/hello?name=X&age=17")
     assert response.status_code == 422
