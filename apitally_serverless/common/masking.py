@@ -100,11 +100,7 @@ class DataMasker:
         content_type = self._get_content_type(headers)
 
         try:
-            if content_type is None or "json" in content_type.lower():
-                parsed = json.loads(body.decode("utf-8"))
-                masked = self._mask_body(parsed)
-                return json.dumps(masked, separators=(",", ":")).encode("utf-8")
-            elif "ndjson" in content_type.lower():
+            if content_type is not None and "ndjson" in content_type.lower():
                 lines = body.decode("utf-8").split("\n")
                 masked_lines = []
                 for line in lines:
@@ -117,6 +113,10 @@ class DataMasker:
                         except (json.JSONDecodeError, UnicodeDecodeError):
                             masked_lines.append(line)
                 return "\n".join(masked_lines).encode("utf-8")
+            elif content_type is None or "json" in content_type.lower():
+                parsed = json.loads(body.decode("utf-8"))
+                masked = self._mask_body(parsed)
+                return json.dumps(masked, separators=(",", ":")).encode("utf-8")
         except (json.JSONDecodeError, UnicodeDecodeError):
             pass
 
